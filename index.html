@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <script type="text/javascript" src="./javascript.js"></script>
+  </head>
+  <body>
+    <audio id="audio" src="./audio/bday.mp3"></audio>
+    <div class="main-container">
+      <div id="bulb" onclick="revealBirthday()">
+        <div class="overlay one">
+          <p>Priya, It's super dark here. Got any ideas?</p>
+        </div>
+        <img src="./images/hanging_bulb.png" alt="Happy Birthday" />
+      </div>
+
+      <div id="birthdayImage">
+        <div class="bday-header">
+          <img src="./images/birthday.png" alt="Happy Birthday" />
+          <img
+            style="width: 300px"
+            src="./images/celebrate.gif"
+            alt="Happy Birthday"
+          />
+          <div class="overlay two">
+            <p>
+              Happy birthday to the most beautiful and sweet girl in the world!
+              Sweet matlab pyari meethi nahi hn. I hope all your wishes and
+              goals will come true as soon as possible, and you will be so
+              successful and satisfied. Tujhe dekh kar hi har koi fida ho jyga
+              lekin tujhe jaan ne ke baad toh wo koi pura ka pura pighl jyga
+              kyuki tu dil ki bhi utni hi saaf hai jitni dikhne ki sundr. Ab
+              bina deri ke cake kaat de. (Click on the cake)
+            </p>
+            <img
+              style="cursor: pointer"
+              onclick="revealPopup()"
+              src="./images/cake.png"
+              alt="cake"
+            />
+          </div>
+          <!-- <div class="rc">
+            <video
+              src="./videos/priya1.mp4"
+              id="localVideoStream"
+              class="video-circle"
+              width="200"
+              height="200"
+              autoplay
+              muted
+              loop
+            ></video>
+          </div>
+          <div class="rc">
+            <video
+              src="./videos/priya2.mp4"
+              id="localVideoStream"
+              class="video-circle"
+              width="200"
+              height="200"
+              autoplay
+              muted
+              loop
+            ></video>
+          </div>
+          <div class="rc">
+            <video
+              src="./videos/priya3.mp4"
+              id="localVideoStream"
+              class="video-circle"
+              width="200"
+              height="200"
+              autoplay
+              muted
+              loop
+            ></video>
+          </div> -->
+          <div id="popup-window">
+            <img
+              style="height: 100%; width: 100%"
+              src="./images/cake-cut.gif"
+              alt="cake-cut"
+            />
+            <button onclick="removePopup()" id="close-button">Close</button>
+          </div>
+        </div>
+      </div>
+      <img
+        class="two"
+        style="display: none"
+        src="./images/bg.jpg"
+        alt="background"
+      />
+      <img
+        class="two"
+        style="display: none"
+        src="./images/bg.jpg"
+        alt="background"
+      />
+      <img
+        class="two"
+        style="display: none"
+        src="./images/bg.jpg"
+        alt="background"
+      />
+    </div>
+  </body>
+</html>

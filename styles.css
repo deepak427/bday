@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.main-container {
+  flex-direction: column;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  height: 100%;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.overlay {
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.overlay.one {
+  background-color: cadetblue;
+  animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+.overlay.two {
+  display: none;
+  background-color: #000000b3;
+  width: 50%;
+}
+
+.two {
+  width: 100vw;
+}
+
+.bday-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bulb {
+  cursor: pointer;
+  animation: 3s ease-out 0s 1 fadein;
+}
+
+#bulb img {
+  width: 60%;
+}
+
+.bday-header img {
+  width: 80%;
+}
+
+.rc {
+  margin-top: 30px;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+  -webkit-transform: rotate(0.000001deg);
+}
+
+.video-circle {
+  border-radius: 10%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+#birthdayImage {
+  display: none;
+  animation: 3s ease-out 0s 1 wiggle;
+  position: absolute;
+  top: 0%;
+}
+
+#popup-window {
+  position: fixed;
+  width: 70%;
+  height: 60%;
+  background: white;
+  border: 1px solid black;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  animation: 1s ease-out 0s 1 fadein;
+}
+
+#close-button {
+  cursor: pointer;
+  outline: 0;
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#close-button:hover {
+  color: #fff;
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+@keyframes slideInLeft {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 18%;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes wiggle {
+  0%,
+  7% {
+    top: -25%;
+  }
+  25% {
+    top: 0%;
+  }
+  30% {
+    transform: rotateX(60deg);
+  }
+  35% {
+    transform: rotateX(-40deg);
+  }
+  40%,
+  100% {
+    transform: rotateX(0);
+  }
+}

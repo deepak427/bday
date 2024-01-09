@@ -68,7 +68,6 @@
 .video-circle {
   border-radius: 10%;
   object-fit: cover;
-  cursor: pointer;
 }
 
 #birthdayImage {

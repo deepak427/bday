@@ -1,5 +1,5 @@
 # Bday
 This is a simple bday wishing website.
 
-## Technology
+## Technologies
 HTML CSS Javascript
